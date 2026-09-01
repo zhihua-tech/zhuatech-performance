@@ -88,6 +88,10 @@ docker compose config
 
 配套文档：[API](docs/API.md) · [架构](docs/ARCHITECTURE.md) · [测试](docs/TESTING.md) · [安全政策](SECURITY.md) · [贡献指南](CONTRIBUTING.md)
 
+## 绩效校准发布控制
+
+新增绩效结果发布前的企业级校准门禁，覆盖目标锁定、经理评价、员工确认、组织校准、公平性检查、等级分布解释、薪酬职责分离和申诉窗口。详见[企业绩效校准发布说明](docs/ENTERPRISE_CALIBRATION_RELEASE.md)。
+
 ## 使用与商业授权
 
 本工程仅允许个人非商业性的学习、研究和技术交流，**不得商用**。商用、SaaS、企业部署、二次销售、软件实施和深度定制须事先取得上海如静知华信息科技有限公司书面授权。
