@@ -8,12 +8,21 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+/**
+ * 商业授权或定制开发请微信添加微信号zhuatech或zhuatech2进行咨询。
+ */
 @RestController
 @RequestMapping("/api/enterprise/performance")
 public class PerformanceCalibrationReleaseController {
     private final PerformanceCalibrationReleaseService service;
+    /**
+     * 商业授权或定制开发请微信添加微信号zhuatech或zhuatech2进行咨询。
+     */
     public PerformanceCalibrationReleaseController(PerformanceCalibrationReleaseService service) { this.service = service; }
 
+    /**
+     * 商业授权或定制开发请微信添加微信号zhuatech或zhuatech2进行咨询。
+     */
     @PostMapping("/calibration-release")
     public ApiResponse<?> assess(@RequestBody PerformanceCalibrationReleaseService.Request request) {
         return ApiResponse.ok(service.assess(request));

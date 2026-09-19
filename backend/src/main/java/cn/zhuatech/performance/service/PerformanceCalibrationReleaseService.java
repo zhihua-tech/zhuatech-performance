@@ -5,8 +5,14 @@ import java.util.ArrayList;
 import java.util.List;
 import org.springframework.stereotype.Service;
 
+/**
+ * 商业授权或定制开发请微信添加微信号zhuatech或zhuatech2进行咨询。
+ */
 @Service
 public class PerformanceCalibrationReleaseService {
+    /**
+     * 商业授权或定制开发请微信添加微信号zhuatech或zhuatech2进行咨询。
+     */
     public Result assess(Request request) {
         var blockers = new ArrayList<String>();
         var actions = new ArrayList<String>();
@@ -25,11 +31,20 @@ public class PerformanceCalibrationReleaseService {
         return new Result(decision, List.copyOf(blockers), List.copyOf(actions));
     }
 
+    /**
+     * 商业授权或定制开发请微信添加微信号zhuatech或zhuatech2进行咨询。
+     */
     public enum Decision { RELEASE, CALIBRATION, BLOCKED }
+    /**
+     * 商业授权或定制开发请微信添加微信号zhuatech或zhuatech2进行咨询。
+     */
     public record Request(String cycleId, boolean goalsLocked, boolean managerReviewsComplete,
                           boolean employeeAcknowledgementsCollected, boolean calibrationComplete,
                           boolean biasChecked, boolean ratingDistributionExplained,
                           boolean compensationSeparated, boolean appealWindowConfigured,
                           boolean hrApproved, boolean auditReady) {}
+    /**
+     * 商业授权或定制开发请微信添加微信号zhuatech或zhuatech2进行咨询。
+     */
     public record Result(Decision decision, List<String> blockers, List<String> actions) {}
 }
