@@ -1,5 +1,7 @@
 # ZhuaTech Performance｜知华科技绩效与人才发展系统
 
+[简体中文](README.md) | [English](README.en.md)
+
 > 把目标、反馈、校准与人才发展沉淀为组织能力
 
 [![Java 21](https://img.shields.io/badge/Java-21-8a5a22)](backend/pom.xml)
