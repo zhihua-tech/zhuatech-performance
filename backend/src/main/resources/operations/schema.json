@@ -1,0 +1,111 @@
+{
+  "slug": "performance",
+  "title": "多来源绩效权重与评审证据核对",
+  "fields": [
+    {
+      "key": "id",
+      "label": "记录编号",
+      "type": "ID"
+    },
+    {
+      "key": "selfScore",
+      "label": "自评分",
+      "type": "NUMBER",
+      "scale": 4,
+      "min": "0",
+      "max": "100"
+    },
+    {
+      "key": "managerScore",
+      "label": "主管分",
+      "type": "NUMBER",
+      "scale": 4,
+      "min": "0",
+      "max": "100"
+    },
+    {
+      "key": "peerScore",
+      "label": "同事分",
+      "type": "NUMBER",
+      "scale": 4,
+      "min": "0",
+      "max": "100"
+    },
+    {
+      "key": "selfWeight",
+      "label": "自评权重%",
+      "type": "NUMBER",
+      "scale": 4,
+      "min": "0",
+      "max": "100"
+    },
+    {
+      "key": "managerWeight",
+      "label": "主管权重%",
+      "type": "NUMBER",
+      "scale": 4,
+      "min": "0",
+      "max": "100"
+    },
+    {
+      "key": "peerWeight",
+      "label": "同事权重%",
+      "type": "NUMBER",
+      "scale": 4,
+      "min": "0",
+      "max": "100"
+    },
+    {
+      "key": "reviewers",
+      "label": "已反馈同事数",
+      "type": "NUMBER",
+      "scale": 0,
+      "min": "0",
+      "max": "1000000"
+    },
+    {
+      "key": "minimumReviewers",
+      "label": "最少同事数",
+      "type": "NUMBER",
+      "scale": 0,
+      "min": "1",
+      "max": "1000000"
+    }
+  ],
+  "columns": [
+    {
+      "key": "weightedScore",
+      "label": "加权分"
+    },
+    {
+      "key": "missingReviewers",
+      "label": "同事反馈缺口"
+    },
+    {
+      "key": "evidenceComplete",
+      "label": "反馈条件满足"
+    }
+  ],
+  "description": "分别输入自评、主管及同事评分和权重，严格要求权重合计100%，证据不足时不将计算分数当作已确认绩效。",
+  "owner": "上海如静知华信息科技有限公司",
+  "website": "https://www.zhuatech.cn/",
+  "authorization": "商业授权或定制开发请微信添加微信号zhuatech或zhuatech2进行咨询。",
+  "version": 1,
+  "notes": "输入均须为已获授权的同口径数据。金额固定人民币元；比例为百分数。核算结果只用于复核，未审批、未写库、未发起外部调用，也未触发付款、签名、资料销毁或设备控制。建议不构成法律、安全、会计或碳核证结论。",
+  "sample": {
+    "asOf": "2026-10-23",
+    "records": [
+      {
+        "id": "ITEM-001",
+        "selfScore": "80",
+        "managerScore": "90",
+        "peerScore": "85",
+        "selfWeight": "20",
+        "managerWeight": "60",
+        "peerWeight": "20",
+        "reviewers": "3",
+        "minimumReviewers": "3"
+      }
+    ]
+  }
+}

@@ -1,0 +1,47 @@
+[
+  {
+    "patch": {},
+    "expected": {
+      "decision": "PASS",
+      "weightedScore": "#87",
+      "missingReviewers": "#0"
+    },
+    "error": false
+  },
+  {
+    "patch": {
+      "reviewers": "2"
+    },
+    "expected": {
+      "decision": "HOLD",
+      "evidenceComplete": "false"
+    },
+    "error": false
+  },
+  {
+    "patch": {
+      "selfWeight": "21"
+    },
+    "expected": {},
+    "error": true
+  },
+  {
+    "patch": {
+      "peerWeight": "0",
+      "managerWeight": "80",
+      "reviewers": "0"
+    },
+    "expected": {
+      "decision": "PASS",
+      "weightedScore": "#88"
+    },
+    "error": false
+  },
+  {
+    "patch": {
+      "managerScore": "101"
+    },
+    "expected": {},
+    "error": true
+  }
+]
